@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Experiment outputs (the folder itself is kept)
+results/*
+!results/.gitkeep
+wandb/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

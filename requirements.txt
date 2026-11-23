@@ -1,0 +1,28 @@
+# Python >= 3.10 (the simulator stack was tested with Python 3.10)
+
+# Planning (TFD and VAL are external binaries, see README)
+unified-planning>=1.2
+
+# LLMs
+openai>=1.88
+
+# Experiments / logging
+numpy
+pandas
+wandb            # optional: --log_wandb, scripts/wandb_plan_monitor.py
+
+# Simulation and robot control: main.py, plan_validation.py, ReAct-agent
+coppeliasim-zmqremoteapi-client
+transforms3d
+scipy
+pytorch-kinematics==0.7.5   # needed by CycleIK and by --ik dls
+# CycleIK (default IK solver) is installed from source, see README.
+
+# Perception: main.py --use_owlv2
+torch
+transformers
+pillow
+matplotlib
+
+# Tests
+pytest
